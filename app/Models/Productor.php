@@ -12,6 +12,10 @@ class Productor extends Model
     protected $table = 'productores';
     protected $primaryKey = 'documento';
 
+    protected $fillable = [
+        'documento_identidad', 'nombre', 'apellido', 'telefono', 'correo',
+    ];
+
     public function fincas()
     {
         return $this->hasMany(Finca::class, 'productores_id', 'documento');
