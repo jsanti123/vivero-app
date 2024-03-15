@@ -87,5 +87,31 @@ class ProductorTest extends TestCase
             'email' => $productorsearch->email,
         ]);
     }
+    public function test_insertar_productor_error(): void
+    {
+        // Hacer las migraciones
+        Artisan::call('migrate');
+
+        // Creamos un nuevo productor con un campo obligatorio nulo
+        $productor = new \App\Models\Productor();
+
+        $productor->documento = '123456';
+        $productor->nombre = null; // Campo obligatorio nulo
+        $productor->apellidos = 'Perez';
+        $productor->telefono = '123456789';
+        $productor->email = 'JUAN@EXAMPLE.COM';
+
+        // Intentar guardar el productor
+        try {
+            $productor->save();
+        } catch (\Exception $exception) {
+            // Verificar que la excepción es lanzada debido a la restricción de clave foránea
+            $this->assertInstanceOf(\Illuminate\Database\QueryException::class, $exception);
+            $this->assertDatabaseMissing('productores', ['documento' => '123456']);
+            return;
+        }
+
+    }
+
 
 }
