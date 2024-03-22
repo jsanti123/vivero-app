@@ -13,7 +13,7 @@ class Productor extends Model
     protected $primaryKey = 'documento';
 
     protected $fillable = [
-        'documento_identidad', 'nombre', 'apellido', 'telefono', 'correo',
+        'documento', 'nombre', 'apellidos', 'telefono', 'email',
     ];
 
     public function fincas()

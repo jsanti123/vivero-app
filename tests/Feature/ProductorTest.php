@@ -30,7 +30,7 @@ class ProductorTest extends TestCase
         //obtener un productor valido
         $productor = \App\Models\Productor::all()->first();
         //traer un productor por id
-        $response = $this->get('/productores/' . $productor->documento_identidad);
+        $response = $this->get('/productores/' . $productor->documento);
         $response->assertStatus(200)->assertSee($productor->documento);
 
     }
