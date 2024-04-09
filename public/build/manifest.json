@@ -1,0 +1,16 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-5818027f.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/images/fondo.jpg": {
+    "file": "assets/fondo-8ec8ef7e.jpg",
+    "src": "resources/images/fondo.jpg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-f9f1eaaf.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
