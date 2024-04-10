@@ -11,7 +11,7 @@ class FincaController extends Controller
 {
     public function index()
     {
-        $fincas = Finca::all();
+        $fincas = Finca::paginate(5);
 
         return view('fincas.index', compact('fincas'));
     }
