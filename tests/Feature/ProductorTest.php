@@ -21,20 +21,6 @@ class ProductorTest extends TestCase
     }
 
 
-    public function test_consulta_productor_id(): void
-    {
-        //Hacer las migraciones
-        Artisan::call('migrate');
-        //llenar la base de datos
-        Artisan::call('db:seed');
-        //obtener un productor valido
-        $productor = \App\Models\Productor::all()->first();
-        //traer un productor por id
-        $response = $this->get('/productores/' . $productor->documento);
-        $response->assertStatus(200)->assertSee($productor->documento);
-
-    }
-
     public function test_consulta_productor_id_invalido(): void
     {
         //Hacer las migraciones

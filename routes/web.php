@@ -20,6 +20,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index'])->name('vivero.index');
 Route::get('/productores', [ProductorController::class, 'index'])->name('productor.index');
 Route::get('/productores/{productor}', [ProductorController::class, 'show'])->name('productor.show');
+Route::post('/fincas', [FincaController::class, 'store'])->name('finca.store');
 Route::get('/fincas', [FincaController::class, 'index'])->name('finca.index');
 Route::get('/fincas/{num_catastro}/{municipio}', [FincaController::class, 'show'])->name('finca.show');
 Route::get('/fincas/vivero/labores/{codigo}', [FincaController::class, 'labores'])->name('finca.labores');

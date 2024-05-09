@@ -20,7 +20,7 @@ class Finca extends Model
 
     public function viveros()
     {
-        return$this->hasMany(Vivero::class, 'num_catastro', 'num_catastro')->where('municipio', $this->municipio);
+        return $this->hasMany(Vivero::class, 'num_catastro', 'num_catastro')->where('municipio', $this->municipio);
     }
 
 }

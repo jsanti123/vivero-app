@@ -1,13 +1,18 @@
 {
   "resources/css/finca/showFinca.css": {
-    "file": "assets/showFinca-6d17e925.css",
+    "file": "assets/showFinca-b07af6e1.css",
     "isEntry": true,
     "src": "resources/css/finca/showFinca.css"
   },
   "resources/css/home/showHome.css": {
-    "file": "assets/showHome-461cf715.css",
+    "file": "assets/showHome-ab29089e.css",
     "isEntry": true,
     "src": "resources/css/home/showHome.css"
+  },
+  "resources/css/productor/showProductor.css": {
+    "file": "assets/showProductor-c42ce534.js",
+    "isEntry": true,
+    "src": "resources/css/productor/showProductor.css"
   },
   "resources/images/fondo.jpg": {
     "file": "assets/fondo-8ec8ef7e.jpg",
@@ -26,5 +31,10 @@
     "file": "assets/showHome-f9f1eaaf.js",
     "isEntry": true,
     "src": "resources/js/home/showHome.js"
+  },
+  "resources/js/productor/showProductor.js": {
+    "file": "assets/showProductor-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/productor/showProductor.js"
   }
 }
