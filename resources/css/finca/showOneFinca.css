@@ -1,0 +1,65 @@
+@import 'bootstrap';
+
+body {
+    background-image: url('../../images/fondo1.jpg') !important;
+}
+
+.cont-section {
+    background-color: #12130fde;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.title-finca-viveros {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: #EAE6E5;
+    font-size: 3rem;
+    text-shadow: 5px 5px 4px #000000;
+}
+
+.title-productor-finca {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: #EAE6E5;
+    padding: 10px;
+}
+
+.title-viveros {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.table-style {
+    border-radius: 20px;
+}
+
+.title-vivero {
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+    color: #EAE6E5;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 4px #000000;
+}
+
+.title-form-vivero{
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+    color: #EAE6E5;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.text-form-vivero {
+    font-family: 'Pacifico', cursive;
+    color: #EAE6E5;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+
+.form-vivero {
+    border-radius: 20px;    
+}

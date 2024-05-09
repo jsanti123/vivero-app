@@ -23,8 +23,10 @@ class FincaController extends Controller
         $finca = Finca::where('num_catastro', $num_catastro)
             ->where('municipio', $municipio)
             ->first();
+        
+        $viveros = $finca->viveros()->paginate(4);
 
-        return view('fincas.show', compact('finca'));
+        return view('fincas.show', compact('finca', 'viveros'));
     }
 
     public function store(Request $request){

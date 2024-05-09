@@ -26,3 +26,4 @@ Route::get('/fincas', [FincaController::class, 'index'])->name('finca.index');
 Route::get('/fincas/{num_catastro}/{municipio}', [FincaController::class, 'show'])->name('finca.show');
 Route::get('/fincas/vivero/labores/{codigo}', [FincaController::class, 'labores'])->name('finca.labores');
 Route::get('/fincas/vivero/labores/{labor}/{codigo}', [FincaController::class, 'producto'])->name('finca.productos');
+Route::post('/Viveros', [ViveroController::class, 'store'])->name('vivero.store');

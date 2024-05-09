@@ -4,6 +4,11 @@
     "isEntry": true,
     "src": "resources/css/finca/showFinca.css"
   },
+  "resources/css/finca/showOneFinca.css": {
+    "file": "assets/showOneFinca-c26e5aee.css",
+    "isEntry": true,
+    "src": "resources/css/finca/showOneFinca.css"
+  },
   "resources/css/home/showHome.css": {
     "file": "assets/showHome-ab29089e.css",
     "isEntry": true,
@@ -26,6 +31,11 @@
     "file": "assets/showFinca-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/finca/showFinca.js"
+  },
+  "resources/js/finca/showOneFinca.js": {
+    "file": "assets/showOneFinca-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/finca/showOneFinca.js"
   },
   "resources/js/home/showHome.js": {
     "file": "assets/showHome-f9f1eaaf.js",
