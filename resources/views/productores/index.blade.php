@@ -80,7 +80,7 @@
                     </div>
                     <div class="col-12 my-2">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-6">
                                 <label class="form-label text-form-productor"># de telefono</label>
                                 <input type="number" class="form-control" placeholder="Ingrese el numero de telefono" name="telefono" value="{{old('telefono')}}">
                                 
@@ -88,7 +88,7 @@
                                     <div class="alert alert-danger my-1">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="col-8">
+                            <div class="col-6">
                                 <label class="form-label text-form-productor">Correo electronico</label>
                                 <input type="email" class="form-control" placeholder="Ingrese el email" name="email" value="{{old('email')}}">
                                 
