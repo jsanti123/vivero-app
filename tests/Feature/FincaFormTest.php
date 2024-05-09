@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Artisan;
 
 class FincaFormTest extends TestCase
 {
-    public function test_formulario_finca(): void
+    public function test_exito_formulario_finca(): void
     {
         //Hacer las migraciones
         Artisan::call('migrate');
@@ -33,7 +33,7 @@ class FincaFormTest extends TestCase
 
     }
 
-    public function test_formulario_finca_error(): void
+    public function test_error_informacion_incorrecta(): void
     {
         //Hacer las migraciones
         Artisan::call('migrate');

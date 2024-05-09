@@ -18,6 +18,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('vivero.index');
+Route::post('/productores', [ProductorController::class, 'store'])->name('productor.store');
 Route::get('/productores', [ProductorController::class, 'index'])->name('productor.index');
 Route::get('/productores/{productor}', [ProductorController::class, 'show'])->name('productor.show');
 Route::post('/fincas', [FincaController::class, 'store'])->name('finca.store');
